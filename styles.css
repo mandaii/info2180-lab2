@@ -1,0 +1,135 @@
+
+
+body {
+    font-family: apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif;
+    font-size: 18px;
+    color: #2D3748;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    gap: 20px;
+    padding: 20px;
+}
+
+header {
+    background-color: #63B3ED;
+    color: #FFFFFF;
+    grid-row: 1 / span 1;
+    grid-column: 2 / span 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 10px;
+}
+
+.float-right{
+    float: right;
+    margin: 10px;
+    width: 300px;
+    height: 200px
+}
+
+
+.float-left{
+    float: left;
+    margin: 10px;
+    width: 300px;
+    height: 200px
+}
+
+.profile-picture {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+main {
+    grid-row: 2 / span 1;
+    grid-column: 2 / span 1;
+}
+
+article {
+    grid-column: 2;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+h2 {
+    font-size: 32px;
+    color: #48BB78;
+    margin-bottom: 10px;
+}
+.date-author {
+    color: #718096;
+    margin-bottom: 10px;
+}
+
+
+aside {
+    grid-row: 2;
+    grid-column: 3 ;
+    padding: 40px;
+}
+
+h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 24px;
+    color: #48BB78;
+    margin-bottom: 10px;
+}
+
+aside h3:first-of-type {
+    color: #000000;
+    background-color: #E2E8F0;
+}
+
+aside p {
+    margin-bottom: 20px;
+    background-color: #E2E8F0;
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+a {
+    color: #4299E1;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    grid-row: 3 / span 1;
+    grid-column: 1 / span 3;
+    background-color: #2C5282;
+    color: #FFFFFF;
+    padding: 20px;
+    text-align: left;
+}
